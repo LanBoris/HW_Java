@@ -1,6 +1,8 @@
 package HW_01;
-
 import java.util.Scanner;
+/*
+ * Реализовать простой калькулятор.
+ */
 
 public class task03 {
   public static void main(String[] args) {
@@ -17,8 +19,6 @@ public class task03 {
     } else if (operation.equals("/")){
       result = DivNumbers(firstNumber, secondNumber);
     }
-    System.out.println(operation);
-    System.out.println(result);
     System.out.printf("%.0f %s %.0f = %.2f", firstNumber, operation, secondNumber, result);
   }
 
