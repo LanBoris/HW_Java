@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.List;
 
 import Task01.SolutionTask01;
@@ -7,26 +8,21 @@ import Task03.SolutionTask03;
 public class App {
     public static void main(String[] args) throws Exception {
         // Решение задчи 1:
-        int[] array = {2,3,1,4};
+        int[] array = {11,9,2,1,8,13,4,3,7,5};
+        int[] resultArray = SolutionTask01.MergeSortArray(array);
         System.out.println("Начальный массив:");
-        for (int i = 0; i < array.length; i++) {
-            System.out.printf(array[i] + " ");
-        }
-        SolutionTask01.SortArray(array);
-        System.out.println("\nОтсортированный массив:");
-        for (int i = 0; i < array.length; i++) {
-            System.out.printf(array[i] + " ");
-        }
-
+        System.out.println(Arrays.toString(array));
+        System.out.println("Отсортированный массив:");
+        System.out.println(Arrays.toString(resultArray));
 
         // Решение задачи 2:
-        // SolutionTask02.DeleteAllEven();
+        SolutionTask02.DeleteAllEven();
 
         // Решение задачи 3:
-        // List<Integer> solutionList = SolutionTask03.FillArray();
-        // SolutionTask03.FindMinimum(solutionList);
-        // SolutionTask03.FindMaximum(solutionList);
-        // SolutionTask03.FindAverage(solutionList);
+        List<Integer> solutionList = SolutionTask03.FillArray();
+        SolutionTask03.FindMinimum(solutionList);
+        SolutionTask03.FindMaximum(solutionList);
+        SolutionTask03.FindAverage(solutionList);
 
 
 
