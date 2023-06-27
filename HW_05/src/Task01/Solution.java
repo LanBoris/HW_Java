@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 public class Solution {
 
+    // Метод заполнения и работы с телефонной книгой.
     public static void PhoneBook (){
         HashMap<String, ArrayList<Integer>> phoneBook = new HashMap<>();
         Scanner iScanner = new Scanner(System.in);
@@ -46,6 +47,7 @@ public class Solution {
         iScanner.close();
     }
 
+    // Метод печати нашей телефонной книги.
     private static void PrintPhoneBook (HashMap<String, ArrayList<Integer>> inputHashMap){
         for (Map.Entry<String, ArrayList<Integer>> item: inputHashMap.entrySet()){
             System.out.println(item.getKey() + ": " 
